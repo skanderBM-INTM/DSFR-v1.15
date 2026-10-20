@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSFR - Interrupteur - Exemple 9</title>
+  <!-- CSS DSFR officiel v1.15.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/utility/utility.min.css">
+</head>
+<body>
+  <div class="fr-container fr-my-4w">
+    <h1>Interrupteur - Exemple 9</h1>
+    <div class="fr-my-2w">
+      <fieldset class="fr-fieldset fr-fieldset--error" aria-labelledby="toggles-error-legend toggles-error-messages">
+          <legend class="fr-fieldset__legend" id="toggles-error-legend">
+              Légende pour l’ensemble des éléments en erreur
+          </legend>
+          <div class="fr-fieldset__element">
+              <ul class="fr-toggle__list">
+                  <li>
+                      <div class="fr-toggle fr-toggle--border-bottom">(...)</div>
+                  </li>
+                  <li>
+                      <div class="fr-toggle fr-toggle--border-bottom">(...)</div>
+                  </li>
+                  <li>
+                      <div class="fr-toggle fr-toggle--border-bottom">(...)</div>
+                  </li>
+              </ul>
+          </div>
+          <div class="fr-messages-group" id="toggles-error-messages" aria-live="polite">
+              <p class="fr-message fr-message--error" id="toggles-error-message-error">Texte d’erreur globale</p>
+          </div>
+      </fieldset>
+    </div>
+  </div>
+
+  <!-- JS DSFR officiel -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.module.min.js"></script>
+</body>
+</html>

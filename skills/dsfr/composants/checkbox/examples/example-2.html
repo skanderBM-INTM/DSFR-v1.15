@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSFR - Case à cocher - Exemple 2</title>
+  <!-- CSS DSFR officiel v1.15.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/utility/utility.min.css">
+</head>
+<body>
+  <div class="fr-container fr-my-4w">
+    <h1>Case à cocher - Exemple 2</h1>
+    <div class="fr-my-2w">
+      <fieldset class="fr-fieldset" aria-labelledby="checkboxes-legend checkboxes-messages">
+          <legend class="fr-fieldset__legend--regular fr-fieldset__legend" id="checkboxes-legend">
+              Légende pour l’ensemble des éléments
+          </legend>
+          <div class="fr-fieldset__element">
+              <div class="fr-checkbox-group">
+                  <input name="checkboxes-1" id="checkboxes-1" type="checkbox">
+                  <label class="fr-label" for="checkboxes-1">
+                      Libellé case à cocher
+                  </label>
+              </div>
+          </div>
+          <div class="fr-fieldset__element">
+              <div class="fr-checkbox-group">
+                  <input checked name="checkboxes-2" id="checkboxes-2" type="checkbox">
+                  <label class="fr-label" for="checkboxes-2">
+                      Libellé case à cocher
+                  </label>
+              </div>
+          </div>
+          <div class="fr-fieldset__element">
+              <div class="fr-checkbox-group">
+                  <input name="checkboxes-3" id="checkboxes-3" type="checkbox">
+                  <label class="fr-label" for="checkboxes-3">
+                      Libellé case à cocher
+                  </label>
+              </div>
+          </div>
+          <div class="fr-messages-group" id="checkboxes-messages" aria-live="polite">
+          </div>
+      </fieldset>
+    </div>
+  </div>
+
+  <!-- JS DSFR officiel -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.module.min.js"></script>
+</body>
+</html>

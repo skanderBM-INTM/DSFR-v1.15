@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSFR - En-tête - Exemple 6</title>
+  <!-- CSS DSFR officiel v1.15.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/utility/utility.min.css">
+</head>
+<body>
+  <div class="fr-container fr-my-4w">
+    <h1>En-tête - Exemple 6</h1>
+    <div class="fr-my-2w">
+      <header role="banner" class="fr-header">
+          <div class="fr-header__body">
+              <div class="fr-container">
+                  <div class="fr-header__body-row">
+                      <div class="fr-header__brand fr-enlarge-link">
+                          <div class="fr-header__brand-top">
+                              <div class="fr-header__logo">
+                                  <p class="fr-logo">
+                                      Intitulé
+                                      <br>officiel
+                                  </p>
+                              </div>
+                              <div class="fr-header__navbar">
+                                  <button data-fr-opened="false" aria-controls="modal-nav" title="Menu" type="button" id="button-menu" class="fr-btn--menu fr-btn">Menu</button>
+                              </div>
+                          </div>
+                          <div class="fr-header__service">
+                              <a href="/" title="Accueil - [À MODIFIER - Nom du site / service] - Nom de l’entité (ministère, secrétariat d‘état, gouvernement)">
+                                  <p class="fr-header__service-title">
+                                      Nom du site / service
+                                  </p>
+                              </a>
+                              <p class="fr-header__service-tagline">baseline - précisions sur l‘organisation</p>
+                          </div>
+                      </div>
+                      <div class="fr-header__tools">
+                          <div class="fr-header__tools-links">
+                              <button aria-controls="fr-theme-modal" data-fr-opened="false" type="button" class="fr-icon-theme-fill fr-btn--icon-left fr-btn fr-btn">Paramètres d'affichage</button>
+                              <nav role="navigation" class="fr-translate fr-nav">
+                                  <div class="fr-nav__item">
+                                      <button aria-controls="translate" aria-expanded="false" type="button" class="fr-translate__btn fr-btn">FR<span class="fr-hidden-lg">&nbsp;- Français</span>
+                                      </button>
+                                      <div class="fr-collapse fr-translate__menu fr-menu" id="translate">
+                                          <ul class="fr-menu__list">
+                                              <li>
+                                                  <a class="fr-translate__language fr-nav__link" hreflang="fr" lang="fr" href="/fr/" aria-current="true">FR - Français</a>
+                                              </li>
+                                              <li>
+                                                  <a class="fr-translate__language fr-nav__link" hreflang="en" lang="en" href="/en/">EN - English</a>
+                                              </li>
+                                              <li>
+                                                  <a class="fr-translate__language fr-nav__link" hreflang="es" lang="es" href="/es/">ES - Español</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </nav>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="fr-header__menu fr-modal" id="modal-nav" aria-labelledby="button-menu">
+              <div class="fr-container">
+                  <button aria-controls="modal-nav" title="Fermer" type="button" class="fr-btn--close fr-btn">Fermer</button>
+                  <div class="fr-header__menu-links">
+                  </div>
+              </div>
+          </div>
+      </header>
+    </div>
+  </div>
+
+  <!-- JS DSFR officiel -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.module.min.js"></script>
+</body>
+</html>

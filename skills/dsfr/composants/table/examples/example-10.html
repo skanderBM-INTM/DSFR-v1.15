@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSFR - Tableau - Exemple 10</title>
+  <!-- CSS DSFR officiel v1.15.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/utility/utility.min.css">
+</head>
+<body>
+  <div class="fr-container fr-my-4w">
+    <h1>Tableau - Exemple 10</h1>
+    <div class="fr-my-2w">
+      <div class="fr-table">
+          <div class="fr-table__wrapper">
+              <div class="fr-table__container">
+                  <div class="fr-table__content">
+                      <table>
+                          <caption>
+                              Titre du tableau (caption)
+                          </caption>
+                          <thead>
+                              <tr>
+                                  <th class="fr-cell--fixed" role="columnheader">
+                                      <span class="fr-sr-only">Sélectionner</span>
+                                  </th>
+                                  <th scope="col">
+                                      th0
+                                  </th>
+                                  <th scope="col">
+                                      th1
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <th class="fr-cell--fixed" scope="row">
+                                      <div class="fr-checkbox-group fr-checkbox-group--sm">
+                                          <input data-fr-row-select="true" id="table-select-checkbox-1" type="checkbox">
+                                          <label class="fr-label" for="table-select-checkbox-1">
+                                              Sélectionner la ligne 1
+                                          </label>
+                                      </div>
+                                  </th>
+                                  <td>
+                                      Lorem [...] elit ut.
+                                  </td>
+                                  <td>
+                                      Lorem [...] elit ut.
+                                  </td>
+                              </tr>
+                              <!-- Lignes de corps supplémentaires -->
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS DSFR officiel -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.module.min.js"></script>
+</body>
+</html>

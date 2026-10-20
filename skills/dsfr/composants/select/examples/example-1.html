@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSFR - Liste déroulante - Exemple 1</title>
+  <!-- CSS DSFR officiel v1.15.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/utility/utility.min.css">
+</head>
+<body>
+  <div class="fr-container fr-my-4w">
+    <h1>Liste déroulante - Exemple 1</h1>
+    <div class="fr-my-2w">
+      <div class="fr-select-group">
+          <label class="fr-label" for="select-hint">
+              Libellé pour liste déroulante
+              <span class="fr-hint-text">Texte de description additionnel</span>
+          </label>
+          <select class="fr-select" aria-describedby="select-hint-messages" id="select-hint" name="select-hint">
+              <option value="" selected disabled>Sélectionner une option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+          </select>
+          <div class="fr-messages-group" id="select-hint-messages" aria-live="polite">
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS DSFR officiel -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.module.min.js"></script>
+</body>
+</html>

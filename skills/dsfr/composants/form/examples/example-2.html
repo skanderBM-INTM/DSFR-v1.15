@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSFR - Formulaire - Exemple 2</title>
+  <!-- CSS DSFR officiel v1.15.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/utility/utility.min.css">
+</head>
+<body>
+  <div class="fr-container fr-my-4w">
+    <h1>Formulaire - Exemple 2</h1>
+    <div class="fr-my-2w">
+      <form action="" method="post">
+          <fieldset class="fr-fieldset fr-fieldset--error" aria-labelledby="text-legend text-messages">
+              <legend class="fr-fieldset__legend" id="text-legend">
+                  Légende pour l’ensemble des éléments
+              </legend>
+              <div class="fr-fieldset__element">
+                  <div class="fr-input-group">
+                      <label class="fr-label" for="text-1">
+                          Libellé champ de saisie
+                      </label>
+                      <input class="fr-input" name="text-1" id="text-1" type="text">
+                  </div>
+              </div>
+              <div class="fr-fieldset__element">
+                  <div class="fr-input-group">
+                      <label class="fr-label" for="text-2">
+                          Libellé champ de saisie
+                      </label>
+                      <input class="fr-input" name="text-2" id="text-2" type="text">
+                  </div>
+              </div>
+              <div class="fr-messages-group" id="text-messages" aria-live="polite">
+                  <p class="fr-message fr-message--error">Texte d’erreur obligatoire</p>
+              </div>
+          </fieldset>
+      
+          <button class="fr-btn" type="submit">
+              Enregistrer les informations
+          </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JS DSFR officiel -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.module.min.js"></script>
+</body>
+</html>

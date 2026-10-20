@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSFR - Sommaire - Exemple 1</title>
+  <!-- CSS DSFR officiel v1.15.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/utility/utility.min.css">
+</head>
+<body>
+  <div class="fr-container fr-my-4w">
+    <h1>Sommaire - Exemple 1</h1>
+    <div class="fr-my-2w">
+      <nav class="fr-summary" role="navigation" aria-labelledby="fr-summary-title">
+          <h2 class="fr-summary__title" id="fr-summary-title">Sommaire</h2>
+          <ol>
+              <li>
+                  <a class="fr-summary__link" id="summary-link-1" href="#anchor-1">Libellé du lien 1</a>
+                  <ol>
+                      <li>
+                          <a class="fr-summary__link" id="summary-link-1-1" href="#anchor-1.1">Libellé du lien 1.1</a>
+                      </li>
+                      <li>
+                          <a class="fr-summary__link" id="summary-link-1-2" href="#anchor-1.2">Libellé du lien 1.2</a>
+                      </li>
+                      <li>
+                          <a class="fr-summary__link" id="summary-link-1-3" href="#anchor-1.3">Libellé du lien 1.3</a>
+                      </li>
+                  </ol>
+              </li>
+              <li>
+                  <a class="fr-summary__link" id="summary-link-2" href="#anchor-2">Libellé du lien 2</a>
+              </li>
+          </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- JS DSFR officiel -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.module.min.js"></script>
+</body>
+</html>

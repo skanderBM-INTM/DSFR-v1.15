@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSFR - Interrupteur - Exemple 2</title>
+  <!-- CSS DSFR officiel v1.15.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/utility/utility.min.css">
+</head>
+<body>
+  <div class="fr-container fr-my-4w">
+    <h1>Interrupteur - Exemple 2</h1>
+    <div class="fr-my-2w">
+      <fieldset class="fr-fieldset" aria-labelledby="toggles-legend toggles-messages">
+          <legend class="fr-fieldset__legend" id="toggles-legend">
+              Légende pour l’ensemble des éléments
+          </legend>
+          <div class="fr-fieldset__element">
+              <ul class="fr-toggle__list">
+                  <li>
+                      <div class="fr-toggle">
+                          <input type="checkbox" class="fr-toggle__input" id="toggle-01" aria-describedby="toggle-01-messages">
+                          <label class="fr-toggle__label" for="toggle-01">Libellé de l'interrupteur</label>
+                          <div class="fr-messages-group" id="toggle-01-messages" aria-live="polite">
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="fr-toggle">
+                          <input type="checkbox" class="fr-toggle__input" id="toggle-02" aria-describedby="toggle-02-messages">
+                          <label class="fr-toggle__label" for="toggle-02">Libellé de l'interrupteur</label>
+                          <div class="fr-messages-group" id="toggle-02-messages" aria-live="polite">
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="fr-toggle">
+                          <input type="checkbox" class="fr-toggle__input" id="toggle-03" aria-describedby="toggle-03-messages">
+                          <label class="fr-toggle__label" for="toggle-03">Libellé de l'interrupteur</label>
+                          <div class="fr-messages-group" id="toggle-03-messages" aria-live="polite">
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div class="fr-messages-group" id="toggles-messages" aria-live="polite">
+          </div>
+      </fieldset>
+    </div>
+  </div>
+
+  <!-- JS DSFR officiel -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.module.min.js"></script>
+</body>
+</html>

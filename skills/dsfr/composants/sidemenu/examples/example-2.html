@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSFR - Menu latéral - Exemple 2</title>
+  <!-- CSS DSFR officiel v1.15.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/utility/utility.min.css">
+</head>
+<body>
+  <div class="fr-container fr-my-4w">
+    <h1>Menu latéral - Exemple 2</h1>
+    <div class="fr-my-2w">
+      <nav class="fr-sidemenu" role="navigation" aria-labelledby="sidemenu-title">
+        <div class="fr-sidemenu__inner">
+          <button aria-expanded="false" aria-controls="sidemenu" type="button" class="fr-sidemenu__btn">Dans cette rubrique</button>
+          <div class="fr-collapse" id="sidemenu">
+            <p class="fr-sidemenu__title" id="sidemenu-title">Titre de rubrique</p>
+            <ul class="fr-sidemenu__list">
+              <li class="fr-sidemenu__item">
+                <button aria-expanded="true" aria-controls="sidemenu-submenu-level-02" aria-current="true" type="button" class="fr-sidemenu__btn">Entrée menu active</button>
+                <div class="fr-collapse" id="sidemenu-submenu-level-02">
+                  <ul class="fr-sidemenu__list">
+                    <li class="fr-sidemenu__item">
+                      <a href="#" class="fr-sidemenu__link">Accès direct niveau 2</a>
+                    </li>
+                    <li class="fr-sidemenu__item">
+                      <button aria-expanded="true" aria-controls="sidemenu-submenu-level-03" aria-current="true" type="button" class="fr-sidemenu__btn">Entrée menu active</button>
+                      <div class="fr-collapse" id="sidemenu-submenu-level-03">
+                        <ul class="fr-sidemenu__list">
+                          <li class="fr-sidemenu__item">
+                            <a href="#" class="fr-sidemenu__link">Accès direct niveau 3</a>
+                          </li>
+                          <li class="fr-sidemenu__item">
+                            <a aria-current="page" href="#" class="fr-sidemenu__link">Accès direct niveau 3</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="fr-sidemenu__item">
+                <a href="#" class="fr-sidemenu__link">Accès direct</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- JS DSFR officiel -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.module.min.js"></script>
+</body>
+</html>

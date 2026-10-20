@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSFR - Champ de saisie - Exemple 1</title>
+  <!-- CSS DSFR officiel v1.15.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/utility/utility.min.css">
+</head>
+<body>
+  <div class="fr-container fr-my-4w">
+    <h1>Champ de saisie - Exemple 1</h1>
+    <div class="fr-my-2w">
+      <div class="fr-input-group">
+          <label class="fr-label" for="text-input">
+              Libellé champ de saisie
+              <span class="fr-hint-text">Texte de description additionnel</span>
+          </label>
+          <input class="fr-input" aria-describedby="input-messages" id="text-input" type="text">
+          <div class="fr-messages-group" id="input-messages" aria-live="polite">
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS DSFR officiel -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.module.min.js"></script>
+</body>
+</html>

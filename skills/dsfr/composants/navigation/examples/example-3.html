@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSFR - Navigation principale - Exemple 3</title>
+  <!-- CSS DSFR officiel v1.15.4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/utility/utility.min.css">
+</head>
+<body>
+  <div class="fr-container fr-my-4w">
+    <h1>Navigation principale - Exemple 3</h1>
+    <div class="fr-my-2w">
+      <nav class="fr-nav" role="navigation" aria-label="Menu principal">
+          <ul class="fr-nav__list">
+              <li class="fr-nav__item">
+                  <button class="fr-nav__btn" aria-expanded="false" aria-controls="collapse-menu-01" aria-current="true">Entrée menu active</button>
+                  <div class="fr-collapse fr-menu" id="collapse-menu-01">
+                      <ul class="fr-menu__list">
+                          <li>
+                              <a class="fr-nav__link" href="#" target="_self">Lien de navigation</a>
+                          </li>
+                          <li>
+                            <a class="fr-nav__link" href="#" target="_self" aria-current="page">Lien de navigation</a>
+                          </li>
+                            <li>
+                                <a class="fr-nav__link" href="#" target="_self">Lien de navigation</a>
+                            </li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="fr-nav__item">
+                  <button class="fr-nav__btn" aria-expanded="false" aria-controls="collapse-menu-02">Entrée menu</button>
+                  <div class="fr-collapse fr-menu" id="collapse-menu-02">
+                      <ul class="fr-menu__list">
+                          <li>
+                              <a class="fr-nav__link" href="#" target="_self">Lien de navigation</a>
+                          </li>
+                          <li>
+                              <a class="fr-nav__link" href="#" target="_self">Lien de navigation</a>
+                          </li>
+                          <li>
+                              <a class="fr-nav__link" href="#" target="_self">Lien de navigation</a>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="fr-nav__item">
+                  <a class="fr-nav__link" href="#" target="_self">accès direct</a>
+              </li>
+              <li class="fr-nav__item">
+                  <a class="fr-nav__link" href="#" target="_self">accès direct</a>
+              </li>
+          </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- JS DSFR officiel -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/dsfr.module.min.js"></script>
+</body>
+</html>
